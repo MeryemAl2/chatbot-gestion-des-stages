@@ -1,0 +1,484 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey \uD83D\uDE42",
+        "Hello, thanks for visiting\uD83D\uDE42",
+        "Hi there, what can I do for you?\uD83D\uDE42",
+        "Hi there, how can I help?\uD83D\uDE42"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting\uD83D\uDC4B",
+        "Have a nice day\uD83D\uDC4B",
+        "Bye! Come back again soon\uD83D\uDC4B"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "internship",
+      "patterns": [
+        "iam looking for an internship",
+        "i need an internship",
+        "internship",
+        "What do you propose as an internship??"
+      ],
+      "responses": [
+        "What type of internship are you looking for?"
+      ]
+    },
+    {
+      "tag": "development",
+      "patterns": [
+        "in website development",
+        "development",
+        "front-end development javascript js react native",
+        "back-end development angular spring boot java python"
+      ],
+      "responses": [
+        "would you like it in morocco or in a foreign country"
+      ]
+    },
+    {
+      "tag": "morocco",
+      "patterns": [
+        "morocco",
+        "not in a foreign country",
+        "المغرب",
+        "i want it in morocco"
+      ],
+      "responses": [
+        "here is an example \n<br>Company: Maroc Annuaire Entreprise \n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Immeuble Atlas 3eme Etage Bureau N 12 Av.Mohamed V Dcheira Agadir \n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: info@marocannauire.org \n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speciality: la publicite,la creation des sites internet,application web,refercement ,hebergement \n<br>for more companies type:'more'"]
+
+    },
+    {
+      "tag": "more",
+      "patterns": [
+        "i need more informations",
+        "المزيد",
+        "more"
+      ],
+      "responses": [
+        "yes of course.\n<br>Company (1): MENARA communication \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: lotissement Zaitoun magasin N 2 ,Amerchich Marrakech \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speciality: la communication web et print\n<br>Company (2): IT LABS PRO \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: N 1 2eme etage,363 Lot Al Massar Belmejad ,Marrakech Maroc \n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: contact@itlabspro.com \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speciality: informatique web \n<br>Company (3): Teracier \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Teracier Sarl Km 12 , Route de Tiznit - Sidi bibi \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: teracier.aitmellol@gmail.com \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speciality: Fer a beton et materiaux de construction\n<br>Company (4): Weltis\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Quartier Industriel Moulay Rachid Lot N 18 – Casablanca\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Speciality: La filature de toutes fibres naturelles, Le tissage, La fabrication\n<br>Company (5): NORSYS marrakech\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Lot Koutoubia, Villa N 38 et 39 Quartier Amerchich - 40080 Marrakech\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: directionnaf@norsys.fr <br>Company (6): Monarkit\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Address: 5eme etage, 3 Immeuble Bergis-Avenue SAfI- Lotissement Bureau 18 Attawfiq\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact: +(212) 80 85 03 103\n<br>Company (7): NextLink\n <br> &nbsp;&nbsp;&nbsp;&nbsp;   Address: 31 Bis Boulevard Mohamed Zerktouni Passage el Ghandouri, Entrer A, Bureau N11\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact: 0661654664\n<br>Company (8): Swedgi\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Address:  LOT EL KAIRAOUAN N°57 MABROUKA - MARRAKECH\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 (0) 678870704\n<br>Company (9): Quicktech\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Address: 31 Bis bv Zerktouni Passage El Ghendouri Bloc A N11\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: hello@nextmob.fr\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 0661454738\n<br>Company (10): SGGI\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Address: Centre d'affaires BURJ MALAK, Entree B, 2eme etage (Pres du pont Q.I. Sidi Ghanem) Marrakech\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: sggi.maroc@gmail.com\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 524 35 57 57"
+
+      ]
+    },
+    {
+      "tag": "foreign_country",
+      "patterns": [
+        "foreign",
+        "أجنبي",
+        "i want it in a foreign country"
+
+      ],
+      "responses": [
+        "here is an example.\n<br>Company: Galadrim \n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: 11, Quai Turenne, Nantes, 44000,\n <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for more type 'continue'"
+
+      ]
+    },
+     {
+      "tag": "continue",
+      "patterns": [
+        "any other companies?",
+        "متابعة",
+        "continue"
+      ],
+      "responses": [
+        "yes of course.\n<br>Company (1): apli:Agence landaise Pour l'informatique\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: 175, place de la Caserne Bosquet BP 30069 40002 Mont-de-Marsan cedex, France\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 05 58 85 81 00\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site web for more information: <a href='https://www.alpi40.fr/user/login'>https://www.alpi40.fr/user/login</a>\nCompany (2): EBP CLermont-Ferrand\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 0473190022\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: info@tribout.net\n<br>Company (3): iT7\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: 13 bis avenue de la Motte Picquet 75007 Paris, France\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +33 (0)1 77 21 42 21\n    Email: hello@it7.fr\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email support: support@it7.fr\n<br>Company (4): NETBRAIN\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Espagne\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +34 941 120 442\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: info@netbrain.es\n<br>Company (5): Espaiweb\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Av. Joan Carles 1er,17487 Empuriabrava Espagne\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact: FR: 01 80 82 60 20 ; ES: +34 666 349 381\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: contact@espai-web.com\nCompany (6): LBiT soluzioni informatiche\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Sede Legale: Via Roma 146 - 00071 Pomezia\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 06/98.357.093\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site web: <a href = 'www.lbit-solution.it'>www.lbit-solution.it</a> <br>Company (7): Timsoft\n <br> &nbsp;&nbsp;&nbsp;&nbsp;   Address: 26, rue Marbeuf (SYMPHONY – MARBEUF), Immeuble Berluti, 75008 Paris, France\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: contact@timsoft-group.com\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +33 (0) 1 89 00 05 15\n<br>Company (8): AD MAIORA\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: contact@admaiora-cs.com\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +41(0)22 300 6610\n<br>Company (9): Agence MDN\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Address: Papeteries Images Factory 3 esplanade Augustin Aussedat 74000 Annecy\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 04 50 25 57 87\n<br>Company (10): Micro creation\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Address: 659 avenue de France74460 MARNAZ\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Email: info@micro-creation.com\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 04.50.55.89.31"
+
+      ]
+    },
+    {
+      "tag": "database",
+      "patterns": [
+        "in database",
+        "قاعدة البيانات",
+        "mysql",
+        "database oracle php"
+      ],
+      "responses": [
+        "Which do you prefer, native or abroad?"
+      ]
+    },
+    {
+      "tag": "native",
+      "patterns": [
+        "native",
+        "محليًا",
+        "not in a foreign country",
+        "i want it in local"
+      ],
+      "responses": [
+        "here is an example.<br> \nCompany: SMMALEAD\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Imm Bardia B Appt 1 Av Abou baker Essedik,Marrakech Maroc 45000\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:  info@smmalead.com\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 0 (+212) 616-407-867\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speciality: communication digitale sans failles \n<br>for more companies type:'others'"]
+    },
+    {
+      "tag": "others",
+      "patterns": [
+        "others"
+      ],
+      "responses": [
+        "yes of course.<br>\nCompany (1): SEP Jade Maroc\n  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +212 6 84 53 89 35\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: jademarocimmo@gmail.com\n<br>Company (2): OG Communication\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: jademarocimmo@gmail.com\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 6 61 42 26 53\n<br>Company (3): Comfort Travel Morocco Private Tours\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: 87 Passage Prince Moulay Rachid Medina Jemaa El Fnaa Marrakech, 40000, MA\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact: +212629250187\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: contact@morocco-private-luxury-tours.com\n<br>Company (4): kensington Marrakech\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: 1er etage, Imm El Pacha, 67 Rue Ibn Khaldoun, Marrakech 40000, Morocco\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 5 24 42 22 29\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: marrakech@kensington.ma\n<br>Company (5): Taktil Communication\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Bd Zerktouni, Imm. Colisee Appt N 6, Gueliz. MARRAKECH MAROC\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: + 212 525053493\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: contact@taktilcommunication.com\n<br>Company (6): Dezayna\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Technopark, Boulevard Dammam, Californie, Casablanca, Maroc.\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: (+212) 0693 34 05 85 / (+212) 05 25 155 177\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: dezayna.com@gmail.com\n<br>Company (7): Emailing Management\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: Casablanca, Maroc\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +212 522 450 607 / +212 666 803 880\n   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: contact.emailingmanagement@gmail.com <br> Company (8): Yalabs Agency\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Address: www.apdn.mBureau TA 124, Étage 1, Technopark Agadir, Cité Tilila – Agadir, Maroc\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 525 122 600\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Email: contact@yalabs.ma\n<br>Company (9): Agence de développement e-commerce\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 530 10 83 39\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: contact@flexiapps.net\n<br>Company (10): Handigeni digital Innovations\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: (+212) 7 00 72 84 86\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: contact@handigeni.com"
+      ]
+    },
+    {
+      "tag": "abroad",
+      "patterns": [
+        "abroad",
+        "خارجيًا"
+      ],
+      "responses": [
+        "here is an example.<br>\nCompany: jumbo tours \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Gran Via Asima, 4A - 2 Poligono Son Castello 07009 - Palma de Mallorca. Illes Balears (Spain)\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +34 971 21 12 24\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: groups@jumbotours.com - info@jumbobeds.com\n     <br>for additional details type 'supplementary'"
+
+      ]
+    },
+    {
+      "tag": "supplementary",
+      "patterns": [
+        "supplementary"
+      ],
+      "responses": [
+         "yes of course.\n <br> Company (1):Ericsson (Suède)\n<br> &nbsp; &nbsp; &nbsp; &nbsp; Contact: +46 10 719 00 00\n <br> Company (2): Thales (France) <br> &nbsp; &nbsp; &nbsp; &nbsp; Contact: +44 1512586480\n <br> &nbsp; &nbsp; &nbsp; &nbsp; Address: 350 Longwater Ave,Green Park,Reading, Berkshire, UKRG2 6GF\n<br>Company (3): PwC (Royaume-Uni)<br> &nbsp; &nbsp; &nbsp; &nbsp; Contact: +44 (0)20 7583 5000\n <br> Company (4): Atos (Espagne) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;website: <a href= 'https://atos.net/es/spain/contacto'>https://atos.net/es/spain/contacto</a>\n <br> &nbsp; &nbsp; &nbsp; &nbsp;Company (5): BASE PAYSAGE / URBANISME\n <br> &nbsp;&nbsp; 1-BASE LYON:\n <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: 17, rue Etienne Dolet 69003 LYON\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact: 04 81 91 60 87\n <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: lyon@baseland.fr\n <br>&nbsp;&nbsp; 2-BASE BORDEAUX:\n  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Address: 246 Cours de l’Yser 33800 BORDEAUX\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Contact: 05 47 74 80 08\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: bordeaux@baseland.fr\n <br> &nbsp;&nbsp;3-BASE PARIS\n   <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address: 18-20 rue du Faubourg du Temple 75011 PARIS\n   <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact: 01 42 77 81 81 – 01 82 83 33 00\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: paris@baseland.fr - paris@baseland.fr\n<br>Company (6): La Base Marketing L.B.M\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Address: 4 Villa des Ecoles 92100 BOULOGNE BILLANCOURT\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact: 01 47 36 91 62\n<br>Company (7): Base Plus\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Address: 13 rue Jacobi Netter 67200 Strasbourg\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact:  01 44 51 66 99\n<br>Company (8): Courtier data btob\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Address: 29 Rue Benjamin Raspail 92240 Malakoff,France\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 01 55 58 00 11\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: relationclient@dbifrance.com\nCompany (9): AI & DATA\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Address: 17 rue Ledion, 75014 Paris\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact:  +33(0)6 13 37 77 65\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Email: contact@aid.fr\n<br>Company (10): L'ADN DATA\n <br> &nbsp;&nbsp;&nbsp;&nbsp;   Address: 13 rue Chapon - 75003 Paris\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +33 1 76 40 29 02\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: commercial@ladn-data.eu "
+      ]
+    },
+    {
+      "tag": "artificial intelligence",
+      "patterns": [
+        "in artificial intelligence",
+        "artificial intelligence",
+        "AI"
+      ],
+      "responses": [
+        "Do you prefer to stay Hither or go to another country??"
+      ]
+    },
+    {
+      "tag": "hither",
+      "patterns": [
+        "hither"
+      ],
+      "responses": [
+        "here are some examples\n <br>1. IBM Maroc  &nbsp;&nbsp;&nbsp;&nbsp;   site Web: <a href= 'https://www.ibm.com/ma-fr/'>https://www.ibm.com/ma-fr</a>.\n <br> 2. CGI Maroc   &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.cgi.com/ma/fr'>https://www.cgi.com/ma/fr</a>\n <br>3. Inwi   &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.inwi.ma'>https://www.inwi.ma</a>.\n <br>4. Microsoft Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.microsoft.com/fr-ma/'>https://www.microsoft.com/fr-ma/</a>.\n <br> 5. Gfi Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.gfi.world/ma-fr'>https://www.gfi.world/ma-fr</a>.\n <br> 6. Capgemini Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.capgemini.com/ma-fr/'>https://www.capgemini.com/ma-fr/</a>.\n <br> 7. Intelcia Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.intelcia.com/fr/maroc/'>https://www.intelcia.com/fr/maroc/</a>.\n <br> 8. Orange Maroc   &nbsp;&nbsp;&nbsp;&nbsp; site Web: <a href = 'https://www.orange.ma/'>https://www.orange.ma/</a>.\n <br> 9. Huawei Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://consumer.huawei.com/ma/'>https://consumer.huawei.com/ma/</a>.\n 10. Accenture Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.accenture.com/ma-fr'>https://www.accenture.com/ma-fr</a>.\n <br> 11. Atos Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://atos.net/fr/maroc'>https://atos.net/fr/maroc</a>.\n <br> 12. Sqli Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site Web: <a href = 'https://www.sqli.ma/'>https://www.sqli.ma/</a>.\n <br> 13. Umanis Maroc  &nbsp;&nbsp;&nbsp;&nbsp;  site web: <a href = 'http://www.umanis.com'>http://www.umanis.com</a>. \n <br> There are also Moroccan startups working in the field of artificial intelligence that could offer internships, such as:\n 1. Hightech Payment Systems (HPS)\n 2. InstaDeep\n 3. Pragma AI\n 4. Weego Maroc\n 5. Pentalog Maroc\n 6. Braincities Lab.\n I recommend you to check directly on the websites of these companies or to contact their recruitment department to learn more about their internship opportunities in artificial intelligence."
+]
+    },
+
+    {
+      "tag": "another country",
+      "patterns": [
+        "another country"
+      ],
+      "responses": [
+        "here are some examples\n <br> 1. IBM (Germany, France, United Kingdom (UK), Spain, Italy, etc)\n <br> 2. Google (Switzerland, Ireland, Germany, United Kingdom, etc.)\n <br> 3. Microsoft (France, Germany, United Kingdom, Sweden, etc.)\n <br>4. Amazon (Germany, France, Ireland, United Kingdom, etc.)\n <br> 5. Siemens (Germany, Spain, Austria, etc.)\n <br> 6. Bosch (Germany, France, Netherlands, etc...)\n <br> 7. Airbus (France, Germany, Spain, United Kingdom, etc.)\n  <br> 8. Nokia (Finland, France, Germany, etc.)\n <br> 9. Thales (France, United Kingdom, Netherlands, etc.)\n <br> 10. NVIDIA (Germany, United Kingdom, France, etc.)\n <br> It is important to note that this list is not exhaustive and that many other companies offer internships in artificial intelligence. It is also possible to search for internship offers on specialized websites such as Indeed, LinkedIn, Glassdoor, or even Pôle emploi."
+      ]
+    },
+    {
+      "tag": "computer network",
+      "patterns": [
+        "in computer network",
+        "computer network"
+      ],
+      "responses": [
+        "would you like it nearby or External country "
+      ]
+    },
+    {
+      "tag": "nearby",
+      "patterns": [
+        "nearby"
+      ],
+      "responses": [
+        "here is some example\n <br> 1. Orange Morocco\n <br> 2.Huawei Technologies Morocco\n <br> 3.Cisco Morocco\n <br> 4.IBM Morocco\n <br> 5.Intelcia Morocco\n <br> 6.Dell EMC Morocco\n <br> 7.Inwi Morocco\n  <br> 8.Maroc Telecom\n <br>  9.S2M Group\n <br> Please note that this list is not exhaustive, and there may be other companies in Morocco that offer internships in computer networking. It is recommended to do some further research and check the company's website or reach out to them directly to inquire about their available internship opportunities."
+]
+
+
+    },
+
+    {
+      "tag": "External country",
+      "patterns": [
+        "External country"
+      ],
+      "responses": [
+	"Here are some companies in Europe that offer internships in computer networking:\n <br> 1.Cisco Systems <br> 2.Ericsson\n <br> 3.Nokia\n <br> 4.Juniper Networks\n <br> 5.Huawei Technologies\n <br> 6.Deutsche Telekom\n <br> 7.Vodafone\n <br> 8.Orange\n <br> 9.BT Group\n <br> 10.Telenor\n Please note that this list is not exhaustive and there may be other companies offering internships in computer networking in Europe. It's also worth noting that the availability of internships can vary depending on location and time of year."
+]
+    },
+
+    {
+       "tag": "salutation",
+       "patterns": [
+         "Salut",
+         "Comment allez-vous",
+         "Est-ce que quelqu'un est là?",
+         "Bonjour",
+         "Bonne journée"
+       ],
+       "responses": [
+         "salut \uD83D\uDE42",
+         "Bonjour, merci de votre visite\uD83D\uDE42",
+         "Bonjour, que puis-je faire pour vous ?",
+         "Bonjour, comment puis-je vous aider ? "
+       ]
+     },
+    {
+       "tag": "au revoir",
+       "patterns": ["Au revoir", "A plus tard", "adieu", "à la prochaine"],
+       "responses": [
+         "A plus tard, merci de votre visite\uD83D\uDC4B",
+         "À tout à l'heure, merci d'être venu\uD83D\uDC4B",
+         "On se voit plus tard, merci d'être là\uD83D\uDC4B"
+       ]
+     },
+    {
+      "tag": "Merci",
+      "patterns": ["Merci infiniment!" ,"Un grand merci!" , "Oh merci!" , "Merci mille fois!","merci beaucoup"],
+      "responses": ["avec grand plaisir", "heureux de vous être utile."]
+    },
+    {
+      "tag": "stage",
+      "patterns": [
+         "Je suis a la recherche d'un stage",
+         "stage",
+         "j'ai besoin d'un stage",
+         "je veux un stage",
+         "Que proposes-tu comme stage ??"
+      ],
+      "responses": [
+        "Quel type de stage recherchez-vous ?",
+        "Quel genre de stage souhaitez-vous?"
+      ]
+    },
+    {
+      "tag": "developpement",
+      "patterns": [
+        "developpement des sites Web",
+        "developpement",
+        "en matiere d'elaboration de sites Web.",
+        "developpement front-end javascript js react native",
+        "developpement back-end angular spring boot java python"
+      ],
+      "responses": [
+        "souhaitez-vous le faire au Maroc ou a l'étranger."
+      ]
+    },
+    {
+      "tag": "Maroc",
+      "patterns": [
+        "maroc",
+        "pas a l'étranger.",
+        "je le veux au maroc"
+      ],
+      "responses": [
+        "Voila un exemple.<br> \nEntreprise: SMMALEAD\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Imm Bardia B Appt 1 Av Abou baker Essedik,Marrakech Maroc 45000\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail:  info@smmalead.com\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 0 (+212) 616-407-867\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;specialite: communication digitale sans failles \n<br>pour plus d'entreprises tapez:'autre'"]
+    },
+    {
+      "tag": "autre",
+      "patterns": [
+        "j'ai besoin de plus d'informations",
+        "autre",
+        "d'autres sociétés ?"
+      ],
+      "responses": [
+        "Oui bien sur.<br>\nEntreprise (1): MENARA communication \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: lotissement Zaitoun magasin N 2 ,Amerchich Marrakech \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specialite: la communication web et print\n<br>Entreprise (2): IT LABS PRO \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: N 1 2eme etage,363 Lot Al Massar Belmejad ,Marrakech Maroc \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: contact@itlabspro.com \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specialite: informatique web \n<br>Entreprise (3): Teracier \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Teracier Sarl Km 12 , Route de Tiznit - Sidi bibi \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: teracier.aitmellol@gmail.com \n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specialite: Fer a beton et materiaux de construction\n<br>Entreprise (4): Weltis\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Quartier Industriel Moulay Rachid Lot N 18 – Casablanca\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specialite: La filature de toutes fibres naturelles, Le tissage, La fabrication\n<br>Entreprise (5): NORSYS marrakech\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Lot Koutoubia, Villa N 38 et 39 Quartier Amerchich - 40080 Marrakech\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: directionnaf@norsys.fr\n<br>Entreprise (6): EJI-MEDIA SARL\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: C515 ,Rue Settat Marrakech\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: contact@ejimedia.com\n<br>Entreprise (7): MonarKIT\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: 5éme étage, 3 Immeuble Bergis-Avenue SAFI-Lotissement,Bureau 18 Attawfiq Marrakech\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +(33) 9 72-561-256 , +(212) 80 85 03 103\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specialite: Devloppement Web/Mobile, Design et Marketing digital <br>Entreprise (8): NextLink\n <br> &nbsp;&nbsp;&nbsp;&nbsp;   Adresse: 31 Bis Boulevard Mohamed Zerktouni Passage el Ghandouri, Entrer A, Bureau N11\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact: 0661654664\n<br>Entreprise (9): Swedgi\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Adresse:  LOT EL KAIRAOUAN N 57 MABROUKA - MARRAKECH\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 (0) 678870704\n<br>Entreprise (10): Quicktech\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Adresse: 31 Bis bv Zerktouni Passage El Ghendouri Bloc A N11\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: hello@nextmob.fr\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 0661454738\n<br>Entreprise (11): SGGI\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Adresse: Centre d'affaires BURJ MALAK, Entrée B, 2eme étage (Près du pont Q.I. Sidi Ghanem) Marrakech\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: sggi.maroc@gmail.com\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +212 524 35 57 57"
+
+      ]
+    },
+    {
+      "tag": "pays étranger",
+      "patterns": [
+        "l'étranger",
+        "je le veux dans un pays étranger"
+      ],
+      "responses": [
+        "Voila un exemple.<br>\nEntreprise: Galadrim \n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: 11, Quai Turenne, Nantes, 44000,\n<br>pour plus d'entreprises tapez: 'suivre'"
+
+      ]
+    },
+    {
+      "tag": "suivre",
+      "patterns": [
+        "suivre",
+        "d'autres sociétés ?"
+      ],
+      "responses": [
+        "oui bien sur.<br>\nEntreprise (1): apli:Agence landaise Pour l'informatique\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: 175, place de la Caserne Bosquet BP 30069 40002 Mont-de-Marsan cedex, France\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 05 58 85 81 00\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site web: https://www.alpi40.fr/user/login\n<br>Entreprise (2): EBP CLermont-Ferrand\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 0473190022\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: info@tribout.net\n<br>Entreprise (3): iT7\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: 13 bis avenue de la Motte Picquet 75007 Paris, France\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +33 (0)1 77 21 42 21\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: hello@it7.fr\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail support: support@it7.fr\n<br>Entreprise (4): NETBRAIN\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Espagne\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +34 941 120 442\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: info@netbrain.es\n<br>Entreprise (5): Espaiweb\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Av. Joan Carles 1er,17487 Empuriabrava Espagne\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact: FR: 01 80 82 60 20 ; ES: +34 666 349 381\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: contact@espai-web.com\n<br>Entreprise (6): LBiT soluzioni informatiche\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Sede Legale: Via Roma 146 - 00071 Pomezia\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 06/98.357.093\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;site web: <a href = 'www.lbit-solution.it'>www.lbit-solution.it</a>"
+
+      ]
+    },
+    {
+      "tag": "base de donnees",
+      "patterns": [
+        "en base de donnees",
+        "base de donnee",
+        "base de donnees mysql sql oracle php"
+      ],
+      "responses": [
+        "souhaitez-vous le faire localement ou un autre pays."
+      ]
+    },
+    {
+      "tag": "localement",
+      "patterns": [
+        "localement",
+        "pas a l'etranger.",
+        "je le veux au maroc"
+      ],
+      "responses": [
+        "voila un exemple.<br> \nEntreprise: SMMALEAD\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Imm Bardia B Appt 1 Av Abou baker Essedik,Marrakech Maroc 45000\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail:  info@smmalead.com\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 0 (+212) 616-407-867\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spécialité: communication digitale sans failles <br>pour plus d'entreprises tapez:'plus'"]
+    },
+    {
+      "tag": "plus",
+      "patterns": [
+        "plus"
+      ],
+      "responses": [
+        "oui bien sur.<br>\nEntreprise (1): SEP Jade Maroc\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +212 6 84 53 89 35\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: jademarocimmo@gmail.com\n<br>Entreprise (2): OG Communication\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: jademarocimmo@gmail.com\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +212 6 61 42 26 53\n<br>Entreprise (3): Comfort Travel Morocco Private Tours\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: 87 Passage Prince Moulay Rachid Medina Jemaa El Fnaa Marrakech, 40000, MA\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact: +212629250187\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: contact@morocco-private-luxury-tours.com\n<br>Entreprise (4): kensington Marrakech\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: 1er étage, Imm El Pacha, 67 Rue Ibn Khaldoun, Marrakech 40000, Morocco\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +212 5 24 42 22 29\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: marrakech@kensington.ma\n<br>Entreprise (5): Taktil Communication\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Bd Zerktouni, Imm. Colisée Appt N°6, Guéliz. MARRAKECH MAROC\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: + 212 525053493\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: contact@taktilcommunication.com\n<br>Entreprise (6): Dezayna\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Technopark, Boulevard Dammam, Californie, Casablanca, Maroc.\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: (+212) 0693 34 05 85 / (+212) 05 25 155 177\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: dezayna.com@gmail.com\n<br>Entreprise (7): Emailing Management\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Casablanca, Maroc\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +212 522 450 607 / +212 666 803 880\n    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: contact.emailingmanagement@gmail.com"
+      ]
+    },
+    {
+      "tag": "pays etranger",
+      "patterns": [
+        "autre pays",
+        "je le veux dans un pays etranger"
+      ],
+      "responses": [
+        "voila un example.<br>\nEntreprise: jumbo tours \n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse: Gran Via Asima, 4A – 2 Poligono Son Castello 07009 – Palma de Mallorca. Illes Balears (Spain)\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +34 971 21 12 24\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: groups@jumbotours.com - info@jumbobeds.com\n <br>pour plus d'entreprises tapez 'suite'"
+
+      ]
+    },
+    {
+      "tag": "suite",
+      "patterns": [
+        "j'ai besoin de plus d'informations",
+        "suite",
+        "d'autres societes ?"
+      ],
+      "responses": [
+         "oui bien sur.\n <br> Entreprise (1):Ericsson (Suède)\n<br> &nbsp; &nbsp; &nbsp; &nbsp; Contact: +46 10 719 00 00\n <br> Entreprise (2): Thales (France) <br> &nbsp; &nbsp; &nbsp; &nbsp; Contact: +44 1512586480\n <br> &nbsp; &nbsp; &nbsp; &nbsp; Adresse: 350 Longwater Ave,Green Park,Reading, Berkshire, UKRG2 6GF\n<br>Entreprise (3): PwC (Royaume-Uni)<br> &nbsp; &nbsp; &nbsp; &nbsp; Contact: +44 (0)20 7583 5000\n <br> Entreprise (4): Atos (Espagne)\n <br> &nbsp; &nbsp; &nbsp; &nbsp;\n<br>Entreprise (5): BASE PAYSAGE / URBANISME\n <br> &nbsp;&nbsp; 1-BASE LYON:\n <br> &nbsp;&nbsp;&nbsp;&nbsp;   Adresse: 17, rue Etienne Dolet 69003 LYON\n  <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 04 81 91 60 87\n <br>&nbsp;&nbsp;&nbsp;&nbsp;   Email: lyon@baseland.fr\n <br>&nbsp;&nbsp; 2-BASE BORDEAUX:\n  <br>&nbsp;&nbsp;&nbsp;&nbsp;  Adresse: 246 Cours de l’Yser 33800 BORDEAUX\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact: 05 47 74 80 08\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Email: bordeaux@baseland.fr\n <br> &nbsp;&nbsp;&nbsp;&nbsp; 3-BASE PARIS\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Adresse: 18-20 rue du Faubourg du Temple 75011 PARIS\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 01 42 77 81 81 – 01 82 83 33 00\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Email: paris@baseland.fr - paris@baseland.fr\n<br>Entreprise (6): La Base Marketing L.B.M\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Adresse: 4 Villa des Ecoles 92100 BOULOGNE BILLANCOURT\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact: 01 47 36 91 62\n<br>Entreprise (7): Base Plus\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Adresse: 13 rue Jacobi Netter 67200 Strasbourg\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact:  01 44 51 66 99\n<br>Entreprise (8): Courtier data btob\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Adresse: 29 Rue Benjamin Raspail 92240 Malakoff,France\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: 01 55 58 00 11\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: relationclient@dbifrance.com\nEntreprise (9): AI & DATA\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Adresse: 17 rue Ledion, 75014 Paris\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Contact:  +33(0)6 13 37 77 65\n  <br> &nbsp;&nbsp;&nbsp;&nbsp;  Email: contact@aid.fr\n<br>Entreprise (10): L'ADN DATA\n <br> &nbsp;&nbsp;&nbsp;&nbsp;   Adresse: 13 rue Chapon - 75003 Paris\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Contact: +33 1 76 40 29 02\n   <br> &nbsp;&nbsp;&nbsp;&nbsp; Email: commercial@ladn-data.eu "
+      ]
+    },
+    {
+      "tag": "réseau informatique",
+      "patterns": [
+        "reseau informatique",
+        "réseau"
+      ],
+      "responses": [
+        "voudriez-vous qu'il soit à proximité ou dans un Hors-pays "
+      ]
+    },
+    {
+      "tag": "à proximité",
+      "patterns": [
+        "proximite",
+        "a proximite",
+        "à proximité"
+
+      ],
+      "responses": [
+        "voila un exemple \n <br> 1. Orange Morocco\n <br> 2.Huawei Technologies Morocco\n <br> 3.Cisco Morocco\n <br> 4.IBM Morocco\n <br> 5.Intelcia Morocco\n <br> 6.Dell EMC Morocco\n <br> 7.Inwi Morocco\n  <br> 8.Maroc Telecom\n <br>  9.S2M Group\n <br> Please note that this list is not exhaustive, and there may be other companies in Morocco that offer internships in computer networking. It is recommended to do some further research and check the company's website or reach out to them directly to inquire about their available internship opportunities."
+]
+
+
+    },
+
+    {
+      "tag": "Hors-pays",
+      "patterns": [
+        "Hors-pays"
+      ],
+      "responses": [
+	"Voici quelques entreprises en Europe qui proposent des stages en réseaux informatiques:\n <br> 1.Cisco Systems <br> 2.Ericsson\n <br> 3.Nokia\n <br> 4.Juniper Networks\n <br> 5.Huawei Technologies\n <br> 6.Deutsche Telekom\n <br> 7.Vodafone\n <br> 8.Orange\n <br> 9.BT Group\n <br> 10.Telenor\n Veuillez noter que cette liste n'est pas exhaustive et qu'il peut y avoir d'autres entreprises proposant des stages en réseaux informatiques en Europe. Il convient également de noter que la disponibilité des stages peut varier en fonction du lieu et de la période de l'année."
+]
+    },
+    {
+      "tag": "linux operating system",
+      "patterns": [
+        "systéme d'exploitation linux ",
+        "linux operating system",
+        "linux",
+	"systéme d'exploitation"
+      ],
+      "responses": ["here are some examples\n <br> 1.Red Hat site Web: &nbsp;&nbsp;&nbsp;&nbsp;   site Web: <a href= 'https://www.redhat.com/fr/'>https://www.redhat.com/fr</a>\n<br>2.Canonical\n &nbsp;&nbsp;&nbsp;&nbsp;   site Web: <a href= 'https://canonical.com/'>https://canonical.com</a>\n<br> 3.SUSE &nbsp;&nbsp;&nbsp;&nbsp;   site Web: <a href= 'https://www.suse.com/fr-fr/'>https://www.suse.com/fr-fr/</a>\n <br> 4.Intel &nbsp;&nbsp;&nbsp;&nbsp;   site Web: <a href= 'https://www.intel.com/content/www/us/en/homepage.html'>https://www.intel.com/content/www/us/en/homepage.html</a>\n <br> 5.Mozilla\n &nbsp;&nbsp;&nbsp;&nbsp;   site Web: <a href= 'https://www.mozilla.org/fr/'>https://www.mozilla.org/fr/</a><br>It is important to note that this list is not exhaustive and that many other companies offer internships in operating system linux . It is also possible to search for internship offers on specialized websites such as Indeed, LinkedIn, Glassdoor, or even Pôle emploi."
+        ]
+    },
+    {
+      "tag": "مرحبا",
+      "patterns": [
+        "مرحبا",
+        "أهلاً",
+        "كيف حالك؟",
+        "هل هناك احد؟"
+      ],
+      "responses": [
+        "مرحبا :-)",
+        "مرحبًا ، شكرًا لزيارتك",
+        "مرحبًا ، ما الذي يمكنني فعله من أجلك؟",
+        "مرحبًا ، كيف يمكنني مساعدتك؟"
+      ]
+    },
+    {
+      "tag": "وداعاً",
+      "patterns": [
+        "إلى اللقاء",
+        "أراك لاحقًا",
+        "وداعاً"
+      ],
+      "responses": [
+        "أراك لاحقًا، شكرًا على الزيارة",
+        "أتمنى لك يومًا سعيدًا",
+        "وداعًا! عد مرة أخرى قريبًا."
+      ]
+    },
+    {
+      "tag": "عفوًا",
+      "patterns": [
+        "شكرًا",
+        "شكراً جزيلاً",
+        "هذا مفيد"
+      ],
+      "responses": [
+        "سعيد بالمساعدة!",
+        "في أي وقت!",
+        "من دواعي سروري"
+      ]
+    },
+    {
+      "tag": "تدريب عملي",
+      "patterns": [
+        "أنا أبحث عن تدريب",
+        "أحتاج إلى تدريب",
+        "ما الذي تقترحونه كتدريب؟"
+      ],
+      "responses": [
+        "ما نوع التدريب الذي تبحث عنه؟"
+      ]
+    },
+    {
+      "tag": "التطوير"      ,
+      "patterns": [
+        "في تطوير المواقع الإلكترونية",
+        "التطوير",
+        "تطوير الواجهة الأمامية باستخدام جافاسكريبت js ورد فعل نايتف",
+        "تطوير الجزء الخلفي باستخدام أنغولار وسبرينغ بوت جافا بيثون."
+      ],
+      "responses": [
+        "هل تريد ذلك في المغرب أم في بلد أجنبي؟"
+      ]
+    }
+  ]
+}
